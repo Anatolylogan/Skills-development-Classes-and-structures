@@ -9,8 +9,8 @@ tolya.age = 22;
 tolya.Main();
 class user
 {
- public string name = "Tolya";
- public int age = 22;
+ public string name = "Undefined";
+ public int age;
  public void Main()
  {
    Console.WriteLine($"Имя:{name} Возраст:{age}");
