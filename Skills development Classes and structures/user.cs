@@ -1,12 +1,23 @@
-﻿struct Address(string city, string street)
-{
-  public void Print() => Console.WriteLine($"Город: {city}  Улица: {street}");
-}
+﻿namespace Skills_development_Classes_and_structures;
+using Skills_development_Classes_and_structures;
+using System.Security.Cryptography.X509Certificates;
 class User
 {
- public string name;
- public int age;
- public User() { name = "Неизвестно"; age = 1; }
- public User(string n, int a) { name = n; age = a; }
- public void Print() => Console.WriteLine($"Имя:{name} Возраст:{age}");
+    public string Name;
+    public int Age;
+    public Address address;
+
+    public User()
+    {
+        Name = "Неизвстно";
+        Age = 1;
+    }
+
+    public User(string n, int a)
+    {
+        Name = n;
+        Age = a;
+    }
+
+    public void Print() => Console.WriteLine($"Имя:{Name} Возраст:{Age} {address}");
 }

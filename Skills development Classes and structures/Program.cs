@@ -1,6 +1,6 @@
-﻿User silence = new User();
-User tolya = new User("Tolya", 22);
-silence.Print();
-tolya.Print();
-Address nov = new Address("Novoaltaysk","Topolinaya");
-nov.Print();
+﻿using Skills_development_Classes_and_structures;
+using System.Net.Sockets;
+User nez = new();
+User tol = new("Tolya", 22 );
+tol.address = new("Nov", "Top");
+Console.ReadLine();
