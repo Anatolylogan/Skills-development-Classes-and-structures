@@ -20,4 +20,9 @@ class User
     }
 
     public void Print() => Console.WriteLine($"Имя:{Name} Возраст:{Age} {address}");
+    public void DisplayInfo()
+    {
+        string messege = $"Имя:{Name} Возраст:{Age}";
+        Console.WriteLine(messege);
+    }
 }
