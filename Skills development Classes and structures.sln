@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task 1 2 3 5", "Skills deve
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task 4 Value types and reference types", "Task 4 Value types and reference types\Task 4 Value types and reference types.csproj", "{7A66B617-A54A-429D-9FEC-60F03C4A10F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLibary", "MyLibary\MyLibary.csproj", "{C8F32802-8543-40E9-939C-276177A92717}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7A66B617-A54A-429D-9FEC-60F03C4A10F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A66B617-A54A-429D-9FEC-60F03C4A10F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A66B617-A54A-429D-9FEC-60F03C4A10F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8F32802-8543-40E9-939C-276177A92717}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8F32802-8543-40E9-939C-276177A92717}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8F32802-8543-40E9-939C-276177A92717}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8F32802-8543-40E9-939C-276177A92717}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,6 @@
 ﻿using Skills_development_Classes_and_structures;
 using System.Net.Sockets;
+using MyLibary;
 namespace Skills_development_Classes_and_structures
 {
     class Program
