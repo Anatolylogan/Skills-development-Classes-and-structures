@@ -2,31 +2,37 @@
 {
     public class User
     {
-        private string Name;
-        public int Age;
+        private string name;
+        private int age = 30;
+        public int Age
+        {
+            get { return age; }
+        }
+        public User(int age)
+        {
+            this.age = age;
+        }
         public Address address;
 
         public User()
         {
-            Name = "Неизвстно";
-            Age = 1;
+            name = "Неизвстно";
         }
 
         public User(string n, int a)
         {
-            Name = n;
-            Age = a;
+            name = n;
         }
 
-        public void Print() => Console.WriteLine($"Имя:{Name} Возраст:{Age} {address}");
+        public void Print() => Console.WriteLine($"Имя:{name} Возраст:{Age} {address}");
         public void DisplayInfo()
         {
-            string messege = $"Имя:{Name} Возраст:{Age}";
+            string messege = $"Имя:{name} Возраст:{Age}";
             Console.WriteLine(messege);
         }
         public string GetName()
         {
-            return Name;
+            return name;
         }
     }
 }
