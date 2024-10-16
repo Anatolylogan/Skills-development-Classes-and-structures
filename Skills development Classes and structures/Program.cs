@@ -12,10 +12,8 @@ namespace Skills_development_Classes_and_structures
 
         static void Main(string[] args)
         {
-            User User1 = new User();
-            User1.Name = "Толя";
-            User1.Age = 22;
-            User1.DisplayInfo();
+            User User1 = new User("Анатолий",22);
+            Console.WriteLine($"Имя {User1.GetName()} Возраст {User1.Age}");
         }
     }
 }

@@ -2,7 +2,7 @@
 {
     public class User
     {
-        public string Name;
+        private string Name;
         public int Age;
         public Address address;
 
@@ -23,6 +23,10 @@
         {
             string messege = $"Имя:{Name} Возраст:{Age}";
             Console.WriteLine(messege);
+        }
+        public string GetName()
+        {
+            return Name;
         }
     }
 }
