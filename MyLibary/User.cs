@@ -2,26 +2,35 @@
 {
     public class User
     {
+        public Address address;
         private string name;
-        private int age = 30;
+        private int age;
+
+        public User(string name, int age)
+        {
+            this.name = name;
+            this.age = age;
+        }
+
+        public string Name
+        {
+            get { return name; }
+        }
         public int Age
         {
             get { return age; }
         }
-        public User(int age)
-        {
-            this.age = age;
-        }
-        public Address address;
 
-        public User()
+        public void UpdateInfo(string newName)
         {
-            name = "Неизвстно";
+            name = newName;
+            Console.WriteLine($"Имя обновленно");
         }
-
-        public User(string n, int a)
+        public void UpdateInfo(string newName, int newAge)
         {
-            name = n;
+            name = newName;
+            age = newAge;
+            Console.WriteLine($"Имя и возраст обнавлены");
         }
 
         public void Print() => Console.WriteLine($"Имя:{name} Возраст:{Age} {address}");
