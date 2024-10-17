@@ -5,11 +5,13 @@
         public Address address;
         private string name;
         private int age;
+        private static int userCount = 0;
 
         public User(string name, int age)
         {
             this.name = name;
             this.age = age;
+            userCount++;
         }
 
         public string Name
@@ -20,10 +22,14 @@
         {
             get { return age; }
         }
+        public static int UserCount
+        {
+            get { return userCount; }
+        }
 
         public void UpdateInfo(string newName)
         {
-            name = newName;
+
             Console.WriteLine($"Имя обновленно");
         }
         public void UpdateInfo(string newName, int newAge)
