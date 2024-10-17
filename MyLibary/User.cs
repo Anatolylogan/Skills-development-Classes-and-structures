@@ -6,11 +6,13 @@
         private string name;
         private int age;
         private static int userCount = 0;
+        public readonly int Id;
 
-        public User(string name, int age)
+        public User(string name, int age, int id)
         {
             this.name = name;
             this.age = age;
+            this.Id= id;
             userCount++;
         }
 
@@ -30,13 +32,13 @@
         public void UpdateInfo(string newName)
         {
 
-            Console.WriteLine($"Имя обновленно");
+            Console.WriteLine($"ИМЯ ПОЛЬЗОВАТЕЛЯ ОБНОВЛЕННО:");
         }
         public void UpdateInfo(string newName, int newAge)
         {
             name = newName;
             age = newAge;
-            Console.WriteLine($"Имя и возраст обнавлены");
+            Console.WriteLine($"ИМЯ И ВОЗРАСТ ПОЛЬЗОВАТЕЛЯ ОБНОВЛЕННЫ: ");
         }
 
         public void Print() => Console.WriteLine($"Имя:{name} Возраст:{Age} {address}");
